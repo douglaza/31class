@@ -2,63 +2,176 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>
-            Portfólio Web de Douglas
-        </title>
-    <style>
-        body {background-color: rgb(35, 44, 20)};
-        h1 {font-family: "Arial",sans-serif;}
-        #description {font-family: "Verdana",sans-serif;}
-        .locality {
-		font-weight: bold;
-		font-size: 1.3em;
+        <title>Douglas' Portfolio</title>
+        <style>
+        body {
+            background-color: rgb(245, 222, 179);
+            font-family: Montserrat, sans-serif;
+        };
+        #myName {
+               color: #0a7e51;
+               font-size: 45px;
+               line-height: 55px;
+               font-weight: 600;
+               text-align: left;
+               letter-spacing: -1px;
+        }
+
+        .picture{
+            border-radius: 50%;
+        }
+
+        ul a {
+            text-decoration: none;
+            font-size: 15px;
+            font-style: bold;
+            color: #0a7e51
+        }
+
+        .secundaryTitle{
+            font-size: 15px;
+            font-style: bold;
+            color: #0a7e51
+        }
+
+        .locality{
+		    font-weight: bold;
+		    font-size: 1.3em;
 		}
+
+        #description {
+            font-family: monospace;
+            font-style: italic;
+        }
+
+        .companies{
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        <link href="style.css" rel="stylesheet">
+
+        .heart {
+        margin: 200px;
+        background-color: red;
+        height: 200px;
+        transform: rotate(-45deg);
+        width: 200px;
+        position: relative;
+    }
+
+    .heart:before,
+    .heart:after {
+        content: "";
+        background-color: red;
+        border-radius: 50%;
+        height: 200px;
+        position: absolute;
+        width: 200px;
+    }
+
+    .heart:before {
+        top: -100px;
+    }
+
+    .heart:after {
+        left: 100px;
+    }
+
     </style>
     </head>
     <body>
-        <h1>
-            Douglas Alexandre Costa Silva
-        </h1>
+        <h1 id="myName">Douglas Costa Silva</h1>
+
+        <img class="picture" src="/perfil.jpg" id="how" width="100px" alt="Foto de um Douglas desconfiado">
+
         <ul>
-            <a href="#who">Quem sou?</a>
+            <a href="#who">Sobre mim</a>
         </ul>
         <ul>
-            <a href="#how">Como sou?</a>
+            <a href="#habilities">Habilidades</a>
         </ul>
         <ul>
-            <a href="#like">Do que gosto?</a>
+            <a href="#curriculum">Experiência Profissional</a>
+        </ul>
+        <ul>
+            <a href="#formation">Formação Acadêmica</a>
+        </ul>
+        <ul>
+            <a href="#social">Redes Sociais</a>
+        </ul>
+        <ul>
+            <a href="#like">Mais sobre mim...</a>
         </ul>
 
-        <img src="/perfil.jpg" id="how" width="100px" alt="Pareceço desconfiado?">
+        
 
-        <h3 id="who">
+        <h3 id="who" class="secundaryTitle">
             Quem sou: 
         </h3>
         <p id="description">
-            <strong class="locality">Brasileiro</strong>, natural de <strong class="locality">Belo Horizonte/MG</strong>, onde resido atualmente.<br>
+            <strong class="locality">Brasileiro</strong>, natural de e residente em <strong class="locality">Belo Horizonte/MG</strong>, onde resido atualmente.<br>
             Sou casado e pai da Clarice. <br><br>
-        
-            Formado pela <strong>UFMG</strong>, atualmente trabalho na <strong>ANTT.</strong>.<br>
-            Comecei a estudar na <strong>Trybe</strong><br>
-            a fim de <em>ingressar</em> na carreira de Desenvolvimento de Software.<br><br>
+        </p>
 
+        <h3 id="who" class="secundaryTitle">
+            Competências profissionais 
+        </h3>
+        <p id="habilities">
+            Noções de JavaScript, C, C++, Java, HTML e CSS.<br>
+            Inglês Intermediário.<br>
+            Espanhol Avançado.<br>
+            Francês Básico.<br><br>
+        </p>
+
+        <h3 id="curriculum" class="secundaryTitle">
+            Experiência Profissional
+        </h3>
+        <p>
+            <strong class="companies">ANTT</strong>: servidor público na área de <em>regulação</em> de transportes.<br>
+            <strong class="companies">TELEMAR</strong>: <em>pós-venda</em>>, monitoramento de instalações e reparos de clientes empresariais.<br>
+            <strong class="companies">ST&C</strong>: monitoramento dos serviços de <em>comunicação</em> do <strong class="companies">Unibanco</strong>.<br>
+            <strong class="companies">TDCom</strong>: <em>instalação</em> de serviços de telecomunicações de clientes empresariais da <strong class="companies">Telemar</strong> e <strong class="companies">Embratel</strong>.<br><br>
+
+        </p>
+
+        <h3 id="formation" class="secundaryTitle">
+            Trajetória Acadêmica
+        </h3>
+        <p>
+            . <strong class="companies">Trybe</strong>: Estudante de Desenvolvimento de Sistemas <em>Full-Stack</em>
+            . <strong class="companies">Universidade do Minho</strong>: Intercâmbio acadêmico em Sistemas de Informação
+            . <strong class="companies">UFMG</strong>: Graduação em Sistemas de Informação
+            . <strong class="companies">COLTEC-UFMG</strong>: Técnico em Eletrônica
+        </p>
+
+        <h3 id="social" class="secundaryTitle">
+            Rede Social
+        </h3>
+        <p>
+            <a text-decoration=none target="_blank" href="https://www.linkedin.com/in/douglas-costa-40120a18b">LinkedIn</a>
+            <a text-decoration=none target="_blank" href="http://twitter.com/douglaza">@douglaza</a>
+        </p>
             Sou uma pessoa observadora, <strong>estudiosa</strong> e concentrada.<br>
             Adoro <em>investir</em> meu tempo livre em minha <strong>família</strong>,<br>
             que é a razão pela qual eu quero ser <em>uma pessoa melhor</em>.<br><br>
         </p>
 
-        <p>
-            Enfim, <a href="#how">este</a> sou eu!<br><br>
-        </p>
         <h3 id="like">
-            Meu hobby:
+            Vida pessoal
         </h3>
         <p>
-            Uma das minhas maiores paixões é jogar futebol.<br>
-            Há 15 anos participo do campeonato de futsal do Depto de Computação da UFMG<br>
-            Meu time se chama "INTORNAÇÃO", e sua classificação atual pode ser vista 
-            <a target="_blank" href="http://ative.se/campeonato/?c=115">aqui.</a><br><br>
+            Participo do campeonato de futsal do DCC há 15 anos,<br>
+            tendo sido organizador por duas temporadas durantes a graduação.<br>
+            Sou capitão do INTORNAÇÃO, cuja classificação pode ser acompanhada por <a target="_blank" href="http://ative.se/campeonato/?c=115">AQUI.</a><br><br>
+
+            Sou pai da Clarice, e meu objetivo é ser o melhor pai que ela poderia ter escolhido - se pudesse.<br>
+            Essa tarefa fica um pouco menos complicada pois Deus deu a ela a mulher mais especial deste mundo para ser sua mãe,<br>
+            que pra minha sorte, também é minha esposa.<div class="heart"></div><br><br>            
         </p>
 
+        <p>
+            Enfim, <a href="#how">este</a> sou eu!<br><br>
+        </p>        
     </body>
 </html>
