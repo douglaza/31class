@@ -4,32 +4,52 @@
         <meta charset="utf-8">
         <title>Douglas' Portfolio</title>
         <style>
+         <!-- 
+
+       
         body {
-            background-color: rgb(245, 222, 179);
+            background-color: rgba(173, 166, 166, 0.5);
             font-family: Montserrat, sans-serif;
+            text-align: center;
+            color: #1a4635;
         };
-        #myName {
-               color: #0a7e51;
+    -->        
+        .myName{
+            background-color: black;
+            padding-top: 100px;
+            padding-bottom: 5px;
+            border-radius: 10;
+            border-style: solid;
+
+               color: #54dfa9;
                font-size: 45px;
-               line-height: 55px;
+               line-height: 155px;
                font-weight: 600;
-               text-align: left;
+               text-align: center;
                letter-spacing: -1px;
         }
 
         .picture{
-            border-radius: 50%;
+            border-radius: 46%;
         }
 
-        ul a {
+        ol a {
+            
             text-decoration: none;
-            font-size: 15px;
-            font-style: bold;
-            color: #0a7e51
-        }
+            font-weight: bold;
+            line-height: 1.3em;
+            font-size: 20px;
+            color: #0a7e51;
+        }  
 
         .secundaryTitle{
-            font-size: 15px;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            border-radius: 50;
+            border-style: solid;
+
+            font-size: 40px;
             font-style: bold;
             color: #0a7e51
         }
@@ -41,7 +61,8 @@
 
         #description {
             font-family: monospace;
-            font-style: italic;
+            font-size: 16px;
+            <!-- font-style: italic; -->
         }
 
         .companies{
@@ -49,68 +70,40 @@
             font-size: 1.1em;
         }
 
-        <link href="style.css" rel="stylesheet">
-
-        .heart {
-        margin: 200px;
-        background-color: red;
-        height: 200px;
-        transform: rotate(-45deg);
-        width: 200px;
-        position: relative;
-    }
-
-    .heart:before,
-    .heart:after {
-        content: "";
-        background-color: red;
-        border-radius: 50%;
-        height: 200px;
-        position: absolute;
-        width: 200px;
-    }
-
-    .heart:before {
-        top: -100px;
-    }
-
-    .heart:after {
-        left: 100px;
-    }
-
     </style>
     </head>
     <body>
-        <h1 id="myName">Douglas Costa Silva</h1>
+        <h1 class="secundaryTitle">Douglas Alexandre Costa Silva</h1>
 
-        <img class="picture" src="/perfil.jpg" id="how" width="100px" alt="Foto de um Douglas desconfiado">
+        <img class="picture" src="/perfil.jpg" id="how" width="200px" alt="Foto de um Douglas desconfiado">
 
-        <ul>
+        <ol>
+        <li>
             <a href="#who">Sobre mim</a>
-        </ul>
-        <ul>
-            <a href="#habilities">Habilidades</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
+        <a href="#habilities">Habilidades</a>
+        </li>
+        <li>
             <a href="#curriculum">Experiência Profissional</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
             <a href="#formation">Formação Acadêmica</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
             <a href="#social">Redes Sociais</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
             <a href="#like">Mais sobre mim...</a>
-        </ul>
-
+        </li>
+        </ol>    
         
 
         <h3 id="who" class="secundaryTitle">
             Quem sou: 
         </h3>
         <p id="description">
-            <strong class="locality">Brasileiro</strong>, natural de e residente em <strong class="locality">Belo Horizonte/MG</strong>, onde resido atualmente.<br>
+            <strong class="locality">Brasileiro</strong>, natural de e residente em <strong class="locality">Belo Horizonte/MG</strong>.<br>
             Sou casado e pai da Clarice. <br><br>
         </p>
 
@@ -131,7 +124,7 @@
             <strong class="companies">ANTT</strong>: servidor público na área de <em>regulação</em> de transportes.<br>
             <strong class="companies">TELEMAR</strong>: <em>pós-venda</em>>, monitoramento de instalações e reparos de clientes empresariais.<br>
             <strong class="companies">ST&C</strong>: monitoramento dos serviços de <em>comunicação</em> do <strong class="companies">Unibanco</strong>.<br>
-            <strong class="companies">TDCom</strong>: <em>instalação</em> de serviços de telecomunicações de clientes empresariais da <strong class="companies">Telemar</strong> e <strong class="companies">Embratel</strong>.<br><br>
+            <strong class="companies">TDCom</strong>: <em>instalação</em> de serviços de telecomunicações para clientes empresariais da <strong class="companies">Telemar</strong> e <strong class="companies">Embratel</strong>.<br><br>
 
         </p>
 
@@ -139,25 +132,13 @@
             Trajetória Acadêmica
         </h3>
         <p>
-            . <strong class="companies">Trybe</strong>: Estudante de Desenvolvimento de Sistemas <em>Full-Stack</em>
-            . <strong class="companies">Universidade do Minho</strong>: Intercâmbio acadêmico em Sistemas de Informação
-            . <strong class="companies">UFMG</strong>: Graduação em Sistemas de Informação
-            . <strong class="companies">COLTEC-UFMG</strong>: Técnico em Eletrônica
+            . <strong class="companies">Trybe</strong>: Estudante de Desenvolvimento de Sistemas e Desenvolvimento Web <em>Full-Stack</em><br>
+            . <strong class="companies">Universidade do Minho</strong>: Intercâmbio acadêmico em Sistemas de Informação<br>
+            . <strong class="companies">UFMG</strong>: Graduação em Sistemas de Informação<br>
+            . <strong class="companies">COLTEC-UFMG</strong>: Técnico em Eletrônica<br><br>
         </p>
 
-        <h3 id="social" class="secundaryTitle">
-            Rede Social
-        </h3>
-        <p>
-            <a text-decoration=none target="_blank" href="https://www.linkedin.com/in/douglas-costa-40120a18b">LinkedIn</a>
-            <a text-decoration=none target="_blank" href="http://twitter.com/douglaza">@douglaza</a>
-        </p>
-            Sou uma pessoa observadora, <strong>estudiosa</strong> e concentrada.<br>
-            Adoro <em>investir</em> meu tempo livre em minha <strong>família</strong>,<br>
-            que é a razão pela qual eu quero ser <em>uma pessoa melhor</em>.<br><br>
-        </p>
-
-        <h3 id="like">
+        <h3 id="like" class="secundaryTitle">
             Vida pessoal
         </h3>
         <p>
@@ -167,11 +148,21 @@
 
             Sou pai da Clarice, e meu objetivo é ser o melhor pai que ela poderia ter escolhido - se pudesse.<br>
             Essa tarefa fica um pouco menos complicada pois Deus deu a ela a mulher mais especial deste mundo para ser sua mãe,<br>
-            que pra minha sorte, também é minha esposa.<div class="heart"></div><br><br>            
+            que pra minha sorte, também é minha esposa.            
         </p>
 
         <p>
             Enfim, <a href="#how">este</a> sou eu!<br><br>
         </p>        
+
+        <h3 id="social" class="secundaryTitle">
+            Rede Social
+        </h3>
+        <p>
+            <a text-decoration=none target="_blank" href="https://www.linkedin.com/in/douglas-costa-40120a18b">LinkedIn</a><br>
+            <a text-decoration=none target="_blank" href="http://twitter.com/douglaza">@douglaza</a><br><br>
+        </p>
+        </p>
+
     </body>
 </html>
