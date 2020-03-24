@@ -1,27 +1,26 @@
 <style>
-<!-- 
+
 
        
-        body {
-            background-color: rgba(173, 166, 166, 0.5);
-            font-family: Montserrat, sans-serif;
-            text-align: center;
-            color: #1a4635;
+     body {
+        background-color: rgba(173, 166, 166, 0.5);
+        font-family: Montserrat, sans-serif;
+        text-align: center;
+        color: #1a4635;
         };
-    -->        
+        
     .myName{
         background-color: black;
         padding-top: 100px;
         padding-bottom: 5px;
         border-radius: 10;
         border-style: solid;
-
-           color: #54dfa9;
-           font-size: 45px;
-           line-height: 155px;
-           font-weight: 600;
-           text-align: center;
-           letter-spacing: -1px;
+        color: #54dfa9;
+        font-size: 45px;
+        line-height: 155px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: -1px;
     }
 
     .picture{
